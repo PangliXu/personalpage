@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <p class="p">我的个人网站
+        <a name="p"></p>
+    <div class="header">
+        <ul>
+            <li>主页</li>
+            <li>个人简介</li>
+            <li>联系方式</li>
+            <li>知识结构</li>
+            <li>兴趣特长</li>
+            <li>个人荣誉</li>
+            <li>毕业院校</li>
+        </ul>
+        <div class="login1" onclick="show4()">登录/注册</div>
+    </div>
+
+    <div class="banner">
+
+        <div class="mySlides fade">
+            <img src="images/demo1.jpg" alt="" style="width:100%;height: 540px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/demo2.jpg" alt="" style="width:100%;height: 540px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/demo3.jpg" alt="" style="width:100%;height: 540px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/demo4.jpg" alt="" style="width:100%;height: 540px;">
+        </div>
+
+    </div>
+
+    <div class="Dot">
+        <span class="dot" onclick="current(1)"></span>
+        <span class="dot" onclick="current(2)"></span>
+        <span class="dot" onclick="current(3)"></span>
+        <span class="dot" onclick="current(4)"></span>
+    </div>
+
+    <div class="contents">
+        <ul>
+            <li>所学会用软件
+                <div class="c_Software c">
+                    <a href="#">PS</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">UI</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">AE</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">SAI</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Dreamweaver</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Visual Studio Code</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">notepad++</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">sublime</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">ZendStudio</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">LoadRunner</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Jmeter</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">PyCharm</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Fiddler</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Eclipes EE</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Navicat</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Visual C++ 6.0</a>
+                </div>
+            </li>
+            <li>所学编程语言
+                <div class="c_language c">
+                    <a href="#">c语言</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">html+css3+JavaScript脚本语言</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Java</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Python</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">PHP</a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </li>
+            <li>我了解会的框架
+                <div class="c_frame c">
+                    <a href="#">vue.js</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">jQuery</a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </li>
+            <li>所学服务器
+                <div class="c_server c">
+                    <a href="#">SQL</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">mySQL</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Tomcat</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">Apache</a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </li>
+            <li>做过的仿网页
+                <div class="c_Web c">
+                    <a href="#">淘宝</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">新闻</a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </li>
+        </ul>
+        <div class="login">
+            <form action="php/Login.php" method="POST">
+                <p class="close" onclick="close4()">
+                    &times;
+                </p>
+                <p>
+                    <h3>我的登录页面</h3>
+                </p>
+
+                <p>
+                    <input type="text" placeholder="邮箱账号或手机号码" class="text" />
+                </p>
+
+                <p>
+                    <input type="password" placeholder="输入密码" class="password" />
+                </p>
+
+                <p class="check">
+                    <input type="checkbox" class="checkbox" style="width: 15px;height: 15px;" />&nbsp;十天内免登录
+                    <a href="#" class="a1">忘记密码？</a>
+                </p>
+
+                <p>
+                    <input type="submit" value="登录" class="submit" name="Button" />
+                </p>
+
+            </form>
+            <p>
+                <a href="register.html" target="_black" class="aa">注册新账号</a>
+            </p>
+        </div>
+        <div id="bg"></div>
+    </div>
+    <div class="circle">
+        <a href="#mtop">NEWS</a>
+        <a href="#mtop1">CALL ME</a>
+        <a href="#mtop2">WORKS</a>
+        <a href="#mtop3">FOOTER</a>
+    </div>
+
+    <div class="midi">
+        <a href="#" name="mtop"></a>
+        <div class="m_top">
+            <p class="h2">最近新闻动态</p>
+            <p class="p1">NEWS</p>
+        </div>
+        <div class="m_buttom fade">
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+
+        <div class="m_buttom fade">
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom fade">
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom fade">
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_footer">
+            <input type="button" onclick="upperNext2(-1)" class="upper2" value="上一页"></input type="button">
+            <span onclick="current2(1)" class="dot2">1</span>
+            <span onclick="current2(2)" class="dot2">2</span>
+            <span onclick="current2(3)" class="dot2">3</span>
+            <span onclick="current2(4)" class="dot2">4</span>
+            <span class="Page">...
+                <div class="page">
+                    <a href="" class="dot2_1">5</a>
+                    <a href="" class="dot2_1">6</a>
+                    <a href="" class="dot2_1">7</a>
+                    <a href="" class="dot2_1">8</a>
+                    <a href="" class="dot2_1">9</a>
+                    <a href="" class="dot2_1">10</a>
+                    <a href="" class="dot2_1">11</a>
+                    <a href="" class="dot2_1">12</a>
+                    <a href="" class="dot2_1">13</a>
+                    <a href="" class="dot2_1">14</a>
+                </div>
+            </span>
+            <input type="button" onclick="upperNext2(1)" value="下一页"></input type="button">
+
+        </div>
+    </div>
+    <div class="call" style="text-align: center;">
+        <a href="#" name="mtop1"></a>
+        <p style="font-size: 25px;padding-top: 20px;letter-spacing: 2px;">联系方式</p><br>
+        <p style="font-size: 14px;">CONTACT ME</p><br><br>
+        <p style="font-size: 12px;">欢迎订阅微信公众号，获取更多的精彩信息！</p>
+        <p class="input"><input type="submit" value="微信公众号：XXX"><input type="submit" value="官方店铺：XXXX"></p>
+    </div>
+    <div class="midi3">
+        <a href="#" name="mtop2"></a>
+        <div class="m_top3">
+            <p class="h2">作品展览</p>
+            <p class="p1">Exhibition of works</p>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_buttom3 fade2">
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">习主席同联合国秘书长通电话 传递三个重要信息</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">民政部回应滞留武汉人员救助：可领补助金</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">伊朗武器禁运解除在即 美媒：或买歼10C</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">红色圣地再获命名 055大驱或打破海军舰艇命名惯例</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">赵立坚:可能是美军把疫情带到武汉 美欠我们一个解释</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">巴铁F16全趴窝美国索天价维修费 是时候考虑歼10C了</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">间谍卫星拍到4架新型隐轰将首飞 美:领先B2至少30年</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">意大利曾多次对华伸出援手 从歼8到直10都有他们烙印</a></div>
+            <div class="box2"><img src="images/demo1.jpg" alt=""><a href="">美军舰闯西沙意欲何为？示好越南租借金兰湾停航母</a></div>
+        </div>
+        <div class="m_footer3">
+            <input type="button" value="上一页" onclick="upperNext3(-1)" class="upper3"></input>
+            <div class="box3">
+                <span onclick="current3(1)" class="dot3">1</span>
+                <span onclick="current3(2)" class="dot3">2</span>
+                <span onclick="current3(3)" class="dot3">3</span>
+                <span onclick="current3(4)" class="dot3">4</span>
+                <span onclick="current3(5)" class="dot3">5</span>
+                <span onclick="current3(6)" class="dot3">6</span>
+            </div>
+            <input type="button" value="下一页" onclick="upperNext3(1)"></input>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f_top">
+            <a href="#" name="mtop3"></a>
+            <p>新浪微博：@XXX</p><br>
+            <p>邮箱：XXX@qq.com</p>
+        </div>
+        <div class="f_buttom">
+            <span>Copyriht © Wjguitar.com  2020.3.14. All rights reserved</span>
+        </div>
+    </div>
+    <div class="top"><a href="#p">⬆</a></div>
+    <script src="js/my.js"></script>
+</body>
+
+</html>

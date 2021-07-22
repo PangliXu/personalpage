@@ -1,0 +1,707 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Microsoft YaHei", "微软雅黑", "arial", "tahoma", "MicrosoftJhengHei";
+    color: black;
+}
+
+.p {
+    background: rgb(51, 51, 51);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 22px;
+    line-height: 80px;
+    padding-left: 20%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: rgb(35, 35, 35);
+    /* margin-bottom: 1%; */
+}
+
+.header ul {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+}
+
+.header ul li {
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.header ul li:hover {
+    color: #ff6a00;
+    border-bottom: 3px solid #ff6a00;
+    cursor: pointer;
+}
+
+.login1 {
+    position: absolute;
+    right: 0px;
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    margin-right: 5%;
+    background: red;
+}
+
+.login1:hover {
+    transition: .5s;
+    cursor: pointer;
+    background: yellowgreen;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    /* background: red; */
+    margin: auto;
+}
+
+.mySlides {
+    width: 100%;
+    height: 540px;
+    transition: 0.6s ease;
+}
+
+.Dot {
+    position: relative;
+    width: 80%;
+    text-align: right;
+    margin: auto;
+    margin-top: -2%;
+    padding-right: 2%;
+}
+
+.dot {
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background: #bbb;
+}
+
+.dot:hover,
+.active {
+    background-color: #000000;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.contents {
+    position: relative;
+    top: -340px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-left: 4%;
+}
+
+.login {
+    z-index: 2;
+    position: fixed;
+    top: 200px;
+    right: 10%;
+    width: 400px;
+    height: 375px;
+    padding: 40px;
+    padding-top: 0px;
+    border: 1px solid #ccc;
+    background: white;
+    display: none;
+}
+
+.login .close {
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.login .close:hover {
+    cursor: pointer;
+}
+
+.login h3 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+.login input {
+    width: 320px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.login .text {
+    background: url(../images/text.jpg) center left no-repeat;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.login .password {
+    background: url(../images/password.jpg) center left no-repeat;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.check {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.login .a1 {
+    float: right;
+    text-decoration: none;
+}
+
+.login .submit {
+    margin-bottom: 20px;
+    border: none;
+    background: #3B78DD;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login .aa {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contents ul {
+    width: 20%;
+}
+
+.contents ul li {
+    width: 100%;
+    text-align: left;
+    padding-left: 20%;
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+    opacity: .5;
+}
+
+.c_Software,
+.c_language,
+.c_frame,
+.c_server,
+.c_Web {
+    position: absolute;
+    top: 0px;
+    left: 24%;
+    width: 70%;
+    height: 200px;
+    background: #eee;
+    padding: 2%;
+    display: none;
+    opacity: .9;
+    /* animation: fadee 1s; */
+}
+
+.contents ul li:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: .5s;
+}
+
+.contents ul li:hover div {
+    display: block;
+}
+
+.contents .c a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    cursor: pointer;
+    color: #000;
+}
+
+.contents .c a:hover {
+    color: #ff6a00;
+    text-decoration: underline;
+}
+
+
+/* @keyframes fadee {
+    0% {
+        transform: translateX(-1%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+    }
+} */
+
+.circle {
+    position: relative;
+    top: -180px;
+    left: 20.5%;
+    width: 840px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle a {
+    float: left;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #eee;
+    background: black;
+    opacity: .5;
+}
+
+.circle a:hover {
+    font-size: 18px;
+    background: yellowgreen;
+    opacity: 1;
+}
+
+.midi {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 750px;
+    background: #eee;
+    margin: auto;
+}
+
+.m_top .h2,
+.p1 {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 45px;
+    line-height: 48px;
+    font-size: 22px;
+}
+
+.m_top {
+    padding-bottom: 25px;
+}
+
+.m_top .p1 {
+    font-size: 16px;
+    border-bottom: 3px solid black;
+}
+
+.m_buttom {
+    width: 80%;
+    height: 610px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    transition: 1s;
+    /* background: red; */
+}
+
+.fade1 {
+    -webkit-animation-name: fade1;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade1;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade1 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade1 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.fade2 {
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade2;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+    from {
+        transform: scale(.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade2 {
+    from {
+        transform: scale(.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.m_buttom .box {
+    float: left;
+    padding: 1%;
+    height: 20%;
+    width: 50%;
+}
+
+.m_buttom .box:hover {
+    border: 1px solid #9E0B0F;
+}
+
+.m_buttom .box img {
+    float: left;
+    width: 150px;
+    height: 80px;
+}
+
+.m_buttom .box a {
+    float: left;
+    height: 80px;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+
+.m_buttom .box a:hover {
+    color: #9E0B0F;
+    text-decoration: underline;
+}
+
+.m_footer {
+    position: relative;
+    text-align: center;
+}
+
+.m_footer input {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.m_footer span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.page {
+    z-index: 1;
+    position: absolute;
+    top: -145px;
+    left: 50%;
+    width: 230px;
+    height: 155px;
+    background: black;
+    border-radius: 3px;
+    display: none;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1% 2% 0% 2%;
+    opacity: .8;
+}
+
+.page a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.page a:hover {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #eee;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.m_footer span:hover {
+    cursor: pointer;
+}
+
+.m_footer .Page:hover .page {
+    display: block;
+}
+
+.active2 {
+    background: #ccc;
+}
+
+.call {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 400px;
+    background: rgb(153, 153, 153);
+    color: white;
+}
+
+.call .input {
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    padding-top: 25px;
+}
+
+.call .input input {
+    width: 10%;
+    height: 50px;
+    margin: 0px 100px;
+    border: none;
+    border-radius: 3px;
+    background: rgb(68, 68, 68);
+    color: white;
+}
+
+.call .input input:hover {
+    background: #9E0B0F;
+    color: white;
+    cursor: pointer;
+}
+
+.midi3 {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 745px;
+    background: #eee;
+    margin: auto;
+}
+
+.m_top3 .h2,
+.p1 {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+.m_top3 {
+    padding-bottom: 25px;
+}
+
+.m_top3 .p1 {
+    font-size: 16px;
+}
+
+.m_buttom3 {
+    width: 80%;
+    height: 610px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    /* background: red; */
+}
+
+.m_buttom3 .box2 {
+    float: left;
+    padding: 1%;
+    height: 20%;
+    width: 50%;
+}
+
+.m_buttom3 .box2:hover {
+    border: 1px solid #9E0B0F;
+}
+
+.m_buttom3 .box2 img {
+    float: left;
+    width: 150px;
+    height: 80px;
+}
+
+.m_buttom3 .box2 a {
+    float: left;
+    height: 80px;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+
+.m_buttom3 .box2 a:hover {
+    color: #9E0B0F;
+    text-decoration: underline;
+}
+
+.m_footer3 {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.m_footer3 input,
+.box3 {
+    float: left;
+}
+
+.m_footer3 .box3 {
+    width: 200px;
+    height: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.m_footer3 input {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.m_footer3 input:first-child {
+    margin-right: 5px;
+    margin-left: 40%;
+}
+
+.m_footer3 .box3 span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.m_footer3 input:hover,
+.box3 span:hover {
+    cursor: pointer;
+}
+
+.active2 {
+    background: #ccc;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: rgb(68, 68, 68);
+    color: white;
+    margin-top: 100px;
+}
+
+.f_top {
+    width: 100%;
+    height: 200px;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+.footer .f_buttom {
+    width: 100%;
+    height: 50px;
+    background: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    text-align: center;
+    line-height: 43px;
+    color: #ccc;
+    background-color: white;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: .5;
+    border-radius: 5px;
+}
+
+.top:hover {
+    width: 100px;
+    cursor: pointer;
+    opacity: .8;
+    transition: 1s;
+}
+
+.top a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: overline;
+    line-height: 60px;
+}
+
+.top a:hover {
+    color: blue;
+}

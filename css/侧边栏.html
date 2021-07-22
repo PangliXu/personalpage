@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            width: 100px;
+            height: auto;
+        }
+        
+        li {
+            display: block;
+            width: 100px;
+            height: 40px;
+            background-color: bisque;
+        }
+        
+        ul li div {
+            position: absolute;
+            left: 148px;
+            top: -20px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            display: none;
+        }
+        
+        ul li:hover div {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1
+            <div>
+                <p>a</p>
+            </div>
+        </li>
+        <li>2
+            <div></div>
+        </li>
+        <li>3
+            <div></div>
+        </li>
+        <li>4
+            <div></div>
+        </li>
+    </ul>
+</body>
+
+</html>
